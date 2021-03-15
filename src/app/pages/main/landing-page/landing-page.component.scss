@@ -8,6 +8,14 @@ div.landing-page-container {
   align-content: center
 }
 
+div.image-container {
+  display: inline;
+}
+
+.subject-image {
+  width: 90%;
+}
+
 h1 {
   font-size: 5rem;
 }
@@ -19,7 +27,7 @@ h1 {
     flex-wrap: wrap-reverse;
   }
 
-  .rocket-container {
+  .subject-image {
     width: 50%;
   }
 
@@ -35,7 +43,7 @@ h1 {
     flex-wrap: wrap-reverse;
   }
 
-  .rocket-container {
+  .subject-image {
     width: 50%;
   }
 
@@ -56,12 +64,11 @@ h1 {
     font-size: 5rem;
   }
 
-  .rocket-container {
-    width: 90%;
+  .subject-image {
+    width: 70%;
   }
 }
 
-/* TABLET LANDSCAPE / DESKTOP */
 @media only screen and (min-width: 1920px) {
   div.landing-page-container {
     width: 50%;
@@ -72,7 +79,7 @@ h1 {
     font-size: 5rem;
   }
 
-  .rocket-container {
+  .subject-image {
     width: 90%;
   }
 }

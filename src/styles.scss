@@ -51,10 +51,6 @@ div.full-height-container {
   color: $slc-yellow;
 }
 
-.rocket-container {
-  transform: rotate(-40deg);
-}
-
 .button {
   background-color: transparent;
   border: 5px solid $slc-yellow;
@@ -73,4 +69,22 @@ div.full-height-container {
 .button:hover {
   background-color: $slc-yellow;
   color: $slc-black;
+}
+
+@keyframes content-swap {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.content-swap-animation {
+  animation-name: content-swap;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
 }

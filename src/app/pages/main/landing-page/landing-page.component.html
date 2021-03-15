@@ -6,8 +6,14 @@
       <p class="slc-white-text">Passionate <span class="slc-yellow-text">Coder</span> and <span class="slc-yellow-text">Space</span>
         Aficionado</p>
     </div>
-    <div style="display: inline">
-      <img src="../assets/rocket.png" class="rocket-container">
+    <div class="image-container">
+      <img *ngIf="this.currentSubject" [src]="'../assets/' + this.currentSubject.imageFilename" [style]="this.currentSubject.styles"
+           class="subject-image"
+           (animationend)="subjectImage.classList.remove('content-swap-animation')"
+           id="subject-image"
+           alt="subject-image"
+           #subjectImage
+      >
     </div>
   </div>
 </div>

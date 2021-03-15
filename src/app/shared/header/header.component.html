@@ -1,6 +1,10 @@
 <div class="header-container">
   <div>
-    <p class="slc-yellow-text font-monospaced">huggler.io | {{this.availableWords[this.currentIndex]}}</p>
+    <p class="slc-yellow-text font-monospaced">huggler.io |
+      <span
+        [className]="this.isAnimatingContentChange && !this.isInitialContentChange ? 'content-swap-animation' : ''"
+        (animationend)="this.isAnimatingContentChange = false">{{this.currentSubject.displayName}}</span>
+    </p>
   </div>
   <div class="link-container">
     <div>

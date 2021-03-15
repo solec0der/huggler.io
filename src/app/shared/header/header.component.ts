@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CurrentSubjectService } from '../serviecs/current-subject.service';
+import { Subject } from '../model/subject';
 
 @Component({
   selector: 'app-header',
@@ -6,24 +8,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  public currentIndex = 0;
+  public currentSubject!: Subject;
+  public isAnimatingContentChange = false;
+  public isInitialContentChange = true;
 
-  public readonly availableWords = ['code', 'space', 'tech'];
-
-  constructor() {}
+  constructor(private readonly currentSubjectService: CurrentSubjectService) {}
 
   ngOnInit(): void {
-    this.cycleThroughWords();
-  }
-
-  public cycleThroughWords(): void {
-    setInterval(() => {
-      if (this.currentIndex + 1 >= this.availableWords.length) {
-        this.currentIndex = 0;
-      } else {
-        this.currentIndex++;
-      }
-    }, 5000);
+    this.currentSubjectService
+      .getActiveSubject()
+      .subscribe((currentSubject) => {
+        if (!this.isInitialContentChange) {
+          this.isAnimatingContentChange = true;
+        }
+        setTimeout(() => {
+          this.currentSubject = currentSubject;
+          this.isInitialContentChange = false;
+        }, 500);
+      });
   }
 
   public scrollToElement(elementId: string): void {
