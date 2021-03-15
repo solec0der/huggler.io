@@ -18,13 +18,13 @@
     </div>
 
     <div>
-      <button class="button" style="margin-right: 10px;" routerLink="my-work">
+      <button class="button" style="margin-right: 10px;" routerLink="my-work" routerLinkActive="active">
         My Work
       </button>
-      <button class="button" style="margin-right: 10px;" (click)="this.scrollToElement('my-work')">
+      <button class="button" style="margin-right: 10px;" (click)="this.scrollToElement('my-work')" routerLinkActive="active">
         Skills
       </button>
-      <button class="button" (click)="this.scrollToElement('my-work')">
+      <button class="button" (click)="this.scrollToElement('my-work')" routerLinkActive="active">
         Blog
       </button>
     </div>

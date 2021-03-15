@@ -76,6 +76,11 @@ div.full-height-container {
   color: $slc-black;
 }
 
+.active {
+  background-color: $slc-yellow;
+  color: $slc-black;
+}
+
 @keyframes content-swap {
   0% {
     opacity: 1;
