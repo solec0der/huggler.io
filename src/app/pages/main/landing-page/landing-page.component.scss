@@ -1,0 +1,78 @@
+div.landing-page-container {
+  display: flex;
+  width: 70%;
+  height: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  align-content: center
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-width: 300px) {
+  div.landing-page-container {
+    width: 90%;
+    flex-wrap: wrap-reverse;
+  }
+
+  .rocket-container {
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {
+  div.landing-page-container {
+    width: 90%;
+    flex-wrap: wrap-reverse;
+  }
+
+  .rocket-container {
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {
+  div.landing-page-container {
+    width: 85%;
+    flex-wrap: nowrap;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  .rocket-container {
+    width: 90%;
+  }
+}
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1920px) {
+  div.landing-page-container {
+    width: 50%;
+    flex-wrap: nowrap;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  .rocket-container {
+    width: 90%;
+  }
+}

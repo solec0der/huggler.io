@@ -7,9 +7,15 @@ import { HeaderComponent } from './shared/header/header.component';
 import { MainComponent } from './pages/main/main.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+import { LandingPageComponent } from './pages/main/landing-page/landing-page.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, MainComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    MainComponent,
+    LandingPageComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

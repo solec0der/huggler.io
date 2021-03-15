@@ -25,3 +25,9 @@ i {
 i:hover {
   color: $slc-yellow;
 }
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  div.header-container {
+    display: none;
+  }
+}
