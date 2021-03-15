@@ -2,6 +2,7 @@
   <div>
     <p class="slc-yellow-text font-monospaced">huggler.io |
       <span
+        *ngIf="this.currentSubject"
         [className]="this.isAnimatingContentChange && !this.isInitialContentChange ? 'content-swap-animation' : ''"
         (animationend)="this.isAnimatingContentChange = false">{{this.currentSubject.displayName}}</span>
     </p>
