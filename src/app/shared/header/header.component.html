@@ -1,0 +1,25 @@
+<div class="header-container">
+  <div>
+    <p class="slc-yellow-text font-monospaced">solec0der | {{this.availableWords[this.currentIndex]}}</p>
+  </div>
+  <div class="link-container">
+    <div>
+      <i class="fa fa-github fa-2x" aria-hidden="true" style="margin-right: 15px;" matTooltip="solec0der" (click)="this.openLink('https://github.com/solec0der')"> </i>
+      <i class="fa fa-linkedin fa-2x" aria-hidden="true" style="margin-right: 15px;" matTooltip="yannick-huggler" (click)="this.openLink('https://www.linkedin.com/in/yannick-huggler/')"> </i>
+      <i class="fa fa-twitter fa-2x" aria-hidden="true" style="margin-right: 15px;" matTooltip="yannickhuggler" (click)="this.openLink('https://twitter.com/yannickhuggler')"> </i>
+    </div>
+
+    <div>
+      <button class="button" style="margin-right: 10px;" (click)="this.scrollToElement('my-work')">
+        My Work
+      </button>
+      <button class="button" style="margin-right: 10px;" (click)="this.scrollToElement('my-work')">
+        Skills
+      </button>
+      <button class="button" (click)="this.scrollToElement('my-work')">
+        Misc
+      </button>
+    </div>
+  </div>
+</div>
+

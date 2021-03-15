@@ -1,0 +1,27 @@
+@import "../../../assets/variables";
+
+div.header-container {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 60px);
+  align-items: center;
+  align-content: center;
+}
+
+div.link-container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+i {
+  color: $slc-white;
+  cursor: pointer;
+}
+
+i:hover {
+  color: $slc-yellow;
+}
