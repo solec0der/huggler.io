@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CurrentSubjectService } from '../serviecs/current-subject.service';
+import { CurrentSubjectService } from '../services/current-subject.service';
 import { Subject } from '../model/subject';
 
 @Component({

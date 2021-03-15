@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Subject } from '../../../shared/model/subject';
-import { CurrentSubjectService } from '../../../shared/serviecs/current-subject.service';
+import { Subject } from '../../shared/model/subject';
+import { CurrentSubjectService } from '../../shared/services/current-subject.service';
 
 @Component({
   selector: 'app-landing-page',
@@ -10,8 +10,6 @@ import { CurrentSubjectService } from '../../../shared/serviecs/current-subject.
 export class LandingPageComponent implements OnInit {
   public currentSubject!: Subject;
   public isInitialContentChange = true;
-
-  public particlesUrl = '../../../../assets/particles.json';
 
   constructor(private readonly currentSubjectService: CurrentSubjectService) {}
 

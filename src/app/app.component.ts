@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CurrentSubjectService } from './shared/serviecs/current-subject.service';
+import { CurrentSubjectService } from './shared/services/current-subject.service';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -8,6 +8,8 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
+  public particlesUrl = '../../../../assets/particles.json';
+
   constructor(
     private readonly title: Title,
     private readonly currentSubjectService: CurrentSubjectService

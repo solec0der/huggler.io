@@ -1,0 +1,15 @@
+<div class="full-height-container slc-black-background">
+  <div class="my-work-container">
+    <div style="width: 80%; margin: 0 auto;" *ngIf="this.repositories">
+      <carousel [dots]="true" [cellsToShow]="3" [height]="450" [arrowsOutside]="true" [margin]="30" [cellsToScroll]="3">
+        <div class="slc-yellow-background carousel-cell"
+             style="height: 400px; padding: 10px; border-radius: 10px;"
+             *ngFor="let repository of this.repositories">
+          <p>{{repository.name}}</p>
+
+          <a [href]="repository.html_url">Github Page</a>
+        </div>
+      </carousel>
+    </div>
+  </div>
+</div>

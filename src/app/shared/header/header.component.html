@@ -1,6 +1,6 @@
 <div class="header-container">
   <div>
-    <p class="slc-yellow-text font-monospaced">huggler.io |
+    <p routerLink="" style="outline: none; cursor: pointer" class="slc-yellow-text font-monospaced">huggler.io |
       <span
         *ngIf="this.currentSubject"
         [className]="this.isAnimatingContentChange && !this.isInitialContentChange ? 'content-swap-animation' : ''"
@@ -18,14 +18,14 @@
     </div>
 
     <div>
-      <button class="button" style="margin-right: 10px;" (click)="this.scrollToElement('my-work')">
+      <button class="button" style="margin-right: 10px;" routerLink="my-work">
         My Work
       </button>
       <button class="button" style="margin-right: 10px;" (click)="this.scrollToElement('my-work')">
         Skills
       </button>
       <button class="button" (click)="this.scrollToElement('my-work')">
-        Misc
+        Blog
       </button>
     </div>
   </div>

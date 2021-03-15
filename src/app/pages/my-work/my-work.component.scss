@@ -1,0 +1,12 @@
+div.my-work-container {
+  position: relative;
+  display: flex;
+  width: 70%;
+  height: 100%;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  z-index: 999;
+  margin: 0 auto;
+}
