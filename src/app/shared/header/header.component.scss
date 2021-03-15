@@ -9,6 +9,7 @@ div.header-container {
   width: calc(100% - 60px);
   align-items: center;
   align-content: center;
+  z-index: 1000;
 }
 
 div.link-container {

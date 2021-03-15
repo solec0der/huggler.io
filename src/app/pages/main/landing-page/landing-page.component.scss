@@ -5,11 +5,13 @@ div.landing-page-container {
   justify-content: space-between;
   margin: 0 auto;
   align-items: center;
-  align-content: center
+  align-content: center;
+  z-index: 999;
 }
 
 div.image-container {
   display: inline;
+  z-index: 999;
 }
 
 .subject-image {

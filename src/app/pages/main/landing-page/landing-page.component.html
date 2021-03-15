@@ -1,13 +1,16 @@
 <div class="full-height-container slc-black-background">
+  <ng-particles style="position: absolute; width: 100%; height: 100%;" id="id" [url]="particlesUrl"></ng-particles>
   <div class="landing-page-container">
     <div style="display: inline">
       <h1 class="slc-white-text">Hey there,</h1>
       <h1 class="slc-light-grey-text">I'm Yannick!</h1>
-      <p class="slc-white-text">Passionate <span class="slc-yellow-text">Coder</span> and <span class="slc-yellow-text">Space</span>
+      <p class="slc-white-text">Passionate <span class="slc-yellow-text">Coder</span> and <span
+        class="slc-yellow-text">Space</span>
         Aficionado</p>
     </div>
     <div class="image-container">
-      <img *ngIf="this.currentSubject" [src]="'../assets/' + this.currentSubject.imageFilename" [style]="this.currentSubject.styles"
+      <img *ngIf="this.currentSubject" [src]="'../assets/' + this.currentSubject.imageFilename"
+           [style]="this.currentSubject.styles"
            class="subject-image"
            (animationend)="subjectImage.classList.remove('content-swap-animation')"
            id="subject-image"

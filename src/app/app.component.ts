@@ -1,10 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CurrentSubjectService } from './shared/serviecs/current-subject.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
-  title = 'hugglerio';
+export class AppComponent implements OnInit {
+  constructor(
+    private readonly title: Title,
+    private readonly currentSubjectService: CurrentSubjectService
+  ) {}
+
+  ngOnInit(): void {
+    this.currentSubjectService
+      .getActiveSubject()
+      .subscribe((currentSubject) => {
+        this.title.setTitle('huggler.io | ' + currentSubject.displayName);
+      });
+  }
 }

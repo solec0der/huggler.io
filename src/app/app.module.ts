@@ -8,6 +8,7 @@ import { MainComponent } from './pages/main/main.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { LandingPageComponent } from './pages/main/landing-page/landing-page.component';
+import { NgParticlesModule } from 'ng-particles';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { LandingPageComponent } from './pages/main/landing-page/landing-page.com
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    NgParticlesModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

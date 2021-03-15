@@ -11,6 +11,8 @@ export class LandingPageComponent implements OnInit {
   public currentSubject!: Subject;
   public isInitialContentChange = true;
 
+  public particlesUrl = '../../../../assets/particles.json';
+
   constructor(private readonly currentSubjectService: CurrentSubjectService) {}
 
   ngOnInit(): void {
