@@ -11,6 +11,7 @@ import { NgParticlesModule } from 'ng-particles';
 import { MyWorkComponent } from './pages/my-work/my-work.component';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { HttpClientModule } from '@angular/common/http';
+import { ThatsMeComponent } from './pages/thats-me/thats-me.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     LandingPageComponent,
     MyWorkComponent,
+    ThatsMeComponent,
   ],
   imports: [
     BrowserModule,
